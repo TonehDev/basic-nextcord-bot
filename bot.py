@@ -3,7 +3,6 @@ from nextcord.ext import commands
 import os #pip install os
 
 bot  = commands.Bot(command_prefix = "!")
-testingServerID = 946310802250530846
 
 @bot.command(brief="Load a command")
 async def load(ctx, extension):
