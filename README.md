@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#key-features">Features</a> •
-  <a href="#support">Issues</a> •
+  <a href="#support">Issues</a>
 </p>
 
 
