@@ -8,16 +8,8 @@ class RollDice(commands.Cog):
 
     @commands.command(aliases=["rd", "dice", "roll"])
     async def rolldice(self, ctx):
-        dice_sides = [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
-        ]
         embed = nextcord.Embed(
-            description = f"The dice was rolled and landed on {random.choice(dice_sides)}",
+            description = f"The dice was rolled and landed on {random.randint(6)}",
             color = nextcord.Color.random()
         )
         await ctx.send(embed=embed)
