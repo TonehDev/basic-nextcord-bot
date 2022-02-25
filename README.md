@@ -6,6 +6,6 @@
 
 ## Issues
 
-* Open a new issue if you have any problems
+* Open an issue if you have any problems
 * Contact me on Discord Toneh#3391
 
