@@ -1,5 +1,5 @@
 ## What is basic-nextcord-bot?
-basic-nextcord-bot is a Discord Bot Template which was made in Python using the Nextcord library.
+basic-nextcord-bot is a simple Discord Bot Base which was made in Python using the Nextcord library.
 
 ## Features
 
