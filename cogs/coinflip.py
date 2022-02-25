@@ -6,7 +6,7 @@ class CoinFlip(commands.Cog):
     def __init__(self, client):
         self.client = client 
 
-    @commands.Cog(aliases=["cf", "flip", "coin"], brief="Flip a coin")
+    @commands.command(aliases=["cf", "flip", "coin"], brief="Flip a coin")
     async def coinflip(self, ctx):
         sides = [
             "Tails",
