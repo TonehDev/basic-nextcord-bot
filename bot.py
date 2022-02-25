@@ -39,6 +39,6 @@ for filename in os.listdir('./cogs'):
   if filename.endswith('.py'):
     bot.load_extension(f'cogs.{filename[:-3]}')
   
-bot.run('insert your bot token here')
+bot.run('insert your token here')
 
 # A simple Discord bot base made in Python by Toneh#3391 on Discord

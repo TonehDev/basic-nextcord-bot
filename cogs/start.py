@@ -5,11 +5,12 @@ class Start(commands.Cog):
 
   def __init__(self, client):
     self.client = client
-  
+
   @commands.Cog.listener()
   async def on_ready(self):
     await self.client.change_presence(activity=nextcord.Activity(type = nextcord.ActivityType.watching, name = f"{len(self.client.guilds)} servers | .help"))
     print("Ready.")
+    print(f"Nextcord version: {nextcord.__version__}")
 
   @commands.Cog.listener()
   async def on_command_error(self, ctx, error):
