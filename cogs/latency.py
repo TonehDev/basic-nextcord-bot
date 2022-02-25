@@ -8,12 +8,12 @@ class Ping(commands.Cog):
 
   @commands.command(brief="Shows the client latency.")
   async def ping(self, ctx):
-    embed = nextcord.Embed(
-      title = "Pong!",
-      color = nextcord.Color.blurple()
-    )
-    embed.add_field(name = "Latency", value = f"{round(self.client.latency * 1000)} ms")
-    await ctx.send(embed=embed)
+      embed = nextcord.Embed(
+        title = "Pong!",
+        color = nextcord.Color.blurple()
+      )
+      embed.add_field(name = "Latency", value = f"{round(self.client.latency * 1000)} ms")
+      await ctx.send(embed=embed)
 
 def setup(client):
   client.add_cog(Ping(client))

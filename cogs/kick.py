@@ -53,8 +53,7 @@ class Moderation(commands.Cog):
 
     elif isinstance(error, commands.MissingPermissions):
       embed = nextcord.Embed(
-        title = "No Permissions",
-        description = "You are missing the ``KICK_MEMBERS`` permission.",
+        description = "You are missing the ``KICK MEMBERS`` permission.",
         color = nextcord.Color.red()
       )
       await ctx.send(embed=embed)

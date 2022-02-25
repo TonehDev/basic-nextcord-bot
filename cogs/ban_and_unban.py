@@ -50,7 +50,6 @@ class Ban(commands.Cog):
         if (user.name, user.discriminator) == (member_name, member_discriminator):
             await ctx.guild.unban(user)
             embed = nextcord.Embed(
-                title = "Unban",
                 description = f"{user.mention} has been successfully unbanned!\nModerator: {ctx.author.mention}",
                 color = nextcord.Color.green()
             )
@@ -73,8 +72,7 @@ class Ban(commands.Cog):
 
     elif isinstance(error, commands.MissingPermissions):
       embed = nextcord.Embed(
-        title = "No Permissions",
-        description = "You are missing the ``BAN_MEMBERS`` permission.",
+        description = "You are missing the ``BAN MEMBERS`` permission.",
         color = nextcord.Color.red()
       )
       await ctx.send(embed=embed)
@@ -93,8 +91,7 @@ class Ban(commands.Cog):
 
     elif isinstance(error, commands.MissingPermissions):
       embed = nextcord.Embed(
-        title = "No Permissions",
-        description = "You are missing the ``BAN_MEMBERS`` permission.",
+        description = "You are missing the ``BAN MEMBERS`` permission.",
         color = nextcord.Color.red()
       )
       await ctx.send(embed=embed)

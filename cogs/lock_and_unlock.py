@@ -11,7 +11,6 @@ class Lock(commands.Cog):
   async def lockdown(self, ctx, *, reason = "No reason provided."):
       await ctx.channel.set_permissions(ctx.guild.default_role, send_messages=False)
       embed = nextcord.Embed(
-        title = "Locked",
         description = f"{ctx.channel.mention} has been locked!\nReason: ``{reason}``",
         color = nextcord.Color.green()
       )
@@ -22,7 +21,6 @@ class Lock(commands.Cog):
   async def unlock(self, ctx):
     await ctx.channel.set_permissions(ctx.guild.default_role, send_messages=True)
     embed = nextcord.Embed(
-      title = "Unlocked",
       description = f"{ctx.channel.mention} has been unlocked!",
       color = nextcord.Color.green()
     )
@@ -44,8 +42,7 @@ class Lock(commands.Cog):
 
     elif isinstance(error, commands.MissingPermissions):
       embed = nextcord.Embed(
-        title = "No Permissions",
-        description = "You are missing the ``MANAGE_CHANNELS`` permission.",
+        description = "You are missing the ``MANAGE CHANNELS`` permission.",
         color = nextcord.Color.red()
       )
       await ctx.send(embed=embed)
@@ -64,8 +61,7 @@ class Lock(commands.Cog):
 
     elif isinstance(error, commands.MissingPermissions):
       embed = nextcord.Embed(
-        title = "No Permissions",
-        description = "You are missing the ``MANAGE_CHANNELS`` permission.",
+        description = "You are missing the ``MANAGE CHANNELS`` permission.",
         color = nextcord.Color.red()
       )
       await ctx.send(embed=embed)

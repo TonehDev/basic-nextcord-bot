@@ -87,8 +87,7 @@ class Mute(commands.Cog):
 
     elif isinstance(error, commands.MissingPermissions):
       embed = nextcord.Embed(
-        title = "No Permissions",
-        description = "You are missing the ``MANAGE_ROLES`` permission.",
+        description = "You are missing the ``MANAGE ROLES`` permission.",
         color = nextcord.Color.red()
       )
       await ctx.send(embed=embed)
@@ -107,8 +106,7 @@ class Mute(commands.Cog):
 
     elif isinstance(error, commands.MissingPermissions):
       embed = nextcord.Embed(
-        title = "No Permissions",
-        description = "You are missing the ``MANAGE_ROLES`` permission.",
+        description = "You are missing the ``MANAGE ROLES`` permission.",
         color = nextcord.Color.red()
       )
       await ctx.send(embed=embed)
