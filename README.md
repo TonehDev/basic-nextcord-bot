@@ -1,8 +1,8 @@
 ## Features
 
-* Moderation Commands
-* Utilility Commands
-* Fun Commands (soon)
+* Moderation commands
+* Utilility commands
+* Fun commands
 
 ## Issues
 
