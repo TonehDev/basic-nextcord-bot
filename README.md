@@ -1,5 +1,5 @@
 ## What is basic-nextcord-bot?
-basic-nextcord-bot is a simple Discord Bot Base powered by Nextcord.
+basic-nextcord-bot is a simple Discord Bot Base powered by Nextcord, made for everyone to use.
 
 ## Features
 
