@@ -24,6 +24,7 @@ basic-nextcord-bot is a simple Discord Bot Base powered by Nextcord.
 
 
 
+![bnb](https://user-images.githubusercontent.com/88310222/157488582-9bf08755-9dfc-4cb0-a4a8-3655c8a34f60.png)
 
 
 
@@ -31,4 +32,4 @@ basic-nextcord-bot is a simple Discord Bot Base powered by Nextcord.
 
 
 
-![93326875](https://user-images.githubusercontent.com/88310222/156205456-0704171f-6feb-4924-a852-8e37d03a569a.png)
+
